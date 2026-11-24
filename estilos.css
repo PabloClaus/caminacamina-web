@@ -276,6 +276,18 @@ details[open] summary::after { content: "–"; }
 
 details p { margin: 12px 0 0; color: var(--texto-2); font-size: 17px; }
 
+/* Quién la hace. */
+.quien {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.quien img { border-radius: var(--radio); box-shadow: var(--sombra); }
+
+.quien p { color: var(--texto-2); font-size: 19px; max-width: 56ch; margin: 0; }
+
 /* Datos y contacto. */
 .datos {
   display: grid;
@@ -352,6 +364,9 @@ footer a { color: var(--texto-2); }
   .sin-publicidad { margin-bottom: 32px; }
   .tarjetas, .datos { grid-template-columns: 1fr; }
   .destacado { grid-template-columns: 1fr; gap: 32px; }
+  .quien { grid-template-columns: 1fr; gap: 24px; }
+  .quien img { width: min(320px, 100%); }
+  .quien p { font-size: 17px; }
   .destacado .telefono { width: min(280px, 100%); }
   section { padding: 56px 0; }
   .contacto { padding: 24px; }
