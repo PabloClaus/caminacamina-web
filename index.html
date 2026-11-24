@@ -147,7 +147,7 @@
         <summary>¿Cuánto cuesta?</summary>
         <p>Nada. Es gratis y no tiene publicidad.</p>
       </details>
-      <details>
+      <details id="audio-whatsapp">
         <summary>¿Cómo paso a la app un audio que me mandaron por WhatsApp?</summary>
         <p>En WhatsApp, mantené apretado el audio, tocá Compartir y elegí Caminá Caminá. Ahí lo escuchás, lo recortás si querés, le ponés de quién es y elegís cuándo suena.</p>
       </details>
@@ -163,9 +163,9 @@
         <summary>¿Hay que trotar?</summary>
         <p>No. Es una app para caminar: los entrenamientos y los retos son todos caminando, a tu ritmo.</p>
       </details>
-      <details>
+      <details id="pantalla-apagada">
         <summary>¿Qué pasa si se apaga la pantalla mientras camino?</summary>
-        <p>La caminata sigue. Algunos teléfonos frenan las apps con la pantalla apagada; la primera vez la app te pide permiso para que eso no pase.</p>
+        <p>La caminata sigue. Pero algunos teléfonos, para ahorrar batería, frenan las apps cuando la pantalla está apagada, y la caminata puede cortarse o medir mal. Por eso la app te pide una vez quitarle esa restricción. Si no lo aceptaste, lo podés hacer cuando quieras desde Ajustes → Batería.</p>
       </details>
       <details>
         <summary>¿Y si cambio de teléfono?</summary>
@@ -200,6 +200,17 @@
     <p class="cafecito">¿Te gusta la app? Si querés, podés invitarme un <a href="https://cafecito.app/pclaus">cafecito</a> (desde Argentina) o un <a href="https://ko-fi.com/pabloclaus">café en Ko-fi</a> (desde otros países). Es totalmente opcional: la app es y va a seguir siendo gratis.</p>
   </div>
 </footer>
+
+<script>
+  // Si se llega con un link a una pregunta (#audio-whatsapp), se abre esa pregunta.
+  function abrirPregunta() {
+    var id = location.hash.slice(1);
+    var d = id && document.getElementById(id);
+    if (d && d.tagName === "DETAILS") { d.open = true; d.scrollIntoView({ block: "center" }); }
+  }
+  window.addEventListener("hashchange", abrirPregunta);
+  abrirPregunta();
+</script>
 
 </body>
 </html>
