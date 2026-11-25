@@ -18,13 +18,15 @@
 <main class="ancho texto">
 <!-- Generada desde docs/politica-de-privacidad.md con web/generar_privacidad.py: no editar a mano. -->
 <h1>Política de privacidad de Caminá Caminá</h1>
-<p class="fecha">Última actualización: 23 de noviembre de 2026 (versión 1.8)</p>
+<p class="fecha">Última actualización: 25 de noviembre de 2026 (versión 1.9)</p>
 <p>Caminá Caminá (antes "Walk This Way") es una app para registrar caminatas. Esta política explica qué datos usa la app y qué hace con ellos.</p>
 <h2>Qué datos usa la app</h2>
 <ul>
   <li><strong>Ubicación (GPS).</strong> Mientras hay una caminata en curso, la app usa la ubicación precisa del teléfono para medir distancia, ritmo y recorrido. Lo hace solo durante la caminata, con un aviso visible en la barra de notificaciones.</li>
   <li><strong>Zona aproximada, para el clima (opcional).</strong> Para mostrar el clima, la app usa una ubicación aproximada: la última que ya conoce el teléfono o la de la última caminata, redondeada a unos 1 km. No prende el GPS para esto ni sigue la ubicación en segundo plano. Se puede apagar en Ajustes → Clima.</li>
-  <li><strong>Datos de las caminatas.</strong> Fecha, duración, distancia, ritmo, desnivel, recorrido, esfuerzo percibido, plan de entrenamiento, metas, logros y mensajes personales que la persona escribe.</li>
+  <li><strong>Pasos (opcional).</strong> Si la persona da el permiso de actividad física, la app cuenta los pasos de cada caminata con el contador de pasos del teléfono. Solo mientras hay una caminata en curso, y se guardan con la caminata.</li>
+  <li><strong>Viajes (opcional).</strong> Si la persona elige un viaje "hasta una ciudad", la app toma una sola vez una ubicación aproximada (redondeada a unos 1 km) como punto de partida, para medir la distancia en línea recta. Se guarda en el teléfono junto con el destino elegido. La lista de ciudades viene dentro de la app: buscar una ciudad no consulta ningún servicio.</li>
+  <li><strong>Datos de las caminatas.</strong> Fecha, duración, distancia, ritmo, desnivel, pasos, recorrido, esfuerzo percibido, plan de entrenamiento, metas, logros y mensajes personales que la persona escribe.</li>
   <li><strong>Audios (opcional).</strong> Audios cortos (de hasta 10 segundos) que la persona graba en la app o le pasa desde otra app, como WhatsApp, con "Compartir". Se guardan en el teléfono para que suenen durante las caminatas. No se envían a ningún lado.</li>
   <li><strong>Ajustes.</strong> El nombre con el que la app te habla, si te habla en femenino o en masculino, el nombre de tus mascotas, y preferencias como la voz, los avisos y el horario de los recordatorios.</li>
   <li><strong>Avisar que salí (opcional).</strong> Si la persona lo activa, la app guarda en el teléfono el nombre y el número de WhatsApp de quien elige para avisar. Para elegir el contacto se usa el selector de contactos de Android: la app solo ve el contacto elegido, no toda la agenda.</li>
@@ -34,7 +36,7 @@
 <p>Todos los datos se guardan <strong>solo en el teléfono</strong>. La app no tiene cuentas, no tiene servidores propios y no envía los datos a ningún lado. No usa publicidad ni herramientas de análisis.</p>
 <h2>Servicios de terceros</h2>
 <ul>
-  <li><strong>Mapas de OpenStreetMap.</strong> Para mostrar el mapa de una caminata, la app descarga imágenes del mapa desde los servidores de OpenStreetMap. Esa descarga puede revelar la dirección IP del teléfono y la zona del mapa que se está viendo. No se envía el recorrido. Más información: <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">https://wiki.osmfoundation.org/wiki/Privacy_Policy</a></li>
+  <li><strong>Mapas de OpenStreetMap.</strong> Para mostrar el mapa de una caminata o de un viaje (solo si la persona toca "Ver en el mapa"), la app descarga imágenes del mapa desde los servidores de OpenStreetMap. Esa descarga puede revelar la dirección IP del teléfono y la zona del mapa que se está viendo. No se envía el recorrido. Más información: <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">https://wiki.osmfoundation.org/wiki/Privacy_Policy</a></li>
   <li><strong>Health Connect (opcional).</strong> Si la persona lo activa en Ajustes, cada caminata se guarda en Health Connect, el almacén de salud de Android. Se puede desactivar y revocar el permiso en cualquier momento desde Ajustes de Android.</li>
   <li><strong>Clima de Open-Meteo (opcional).</strong> Para mostrar el clima, la app consulta a Open-Meteo con la zona aproximada (redondeada a unos 1 km). No se envía el recorrido, ni el nombre, ni ningún otro dato. Esa consulta puede revelar la dirección IP del teléfono. Más información: <a href="https://open-meteo.com/en/terms">https://open-meteo.com/en/terms</a></li>
   <li><strong>Nombre de la zona del clima (opcional).</strong> Para mostrar de dónde es el clima ("en Caballito"), la app le pregunta el nombre de la zona al servicio de lugares de Android, con la misma zona aproximada (redondeada a unos 1 km). En la mayoría de los teléfonos ese servicio es de Google. Se pregunta solo cuando la zona cambia, y se apaga junto con el clima.</li>
@@ -44,7 +46,7 @@
 <p>La app solo comparte datos si la persona lo pide, y siempre es la persona quien elige adónde van:</p>
 <ul>
   <li>Exportar un recorrido en formato GPX.</li>
-  <li>Compartir una imagen de una caminata o del resumen del mes ("Tu mes").</li>
+  <li>Compartir una imagen de una caminata, del resumen del mes ("Tu mes") o del avance de un viaje. La imagen del viaje muestra el destino y el camino dibujado, no la ubicación de la persona.</li>
   <li>Avisar que salió a caminar y que volvió: la app abre WhatsApp (u otra app de mensajes) con el mensaje ya escrito. Puede incluir cuánto tiempo calcula que va a tardar y, si la persona lo eligió, un link de Google Maps con el lugar desde donde sale. El mensaje lo manda la persona; la app no lo envía sola.</li>
   <li>Guardar una copia de seguridad en un archivo (con las caminatas, el plan, las mascotas, los audios y los ajustes).</li>
   <li>Enviar el registro de funcionamiento desde Ajustes → Ayuda → "Enviar registro".</li>
@@ -52,6 +54,7 @@
 <h2>Permisos</h2>
 <ul>
   <li><strong>Ubicación:</strong> durante una caminata, para medirla; y, si el clima está activado, una ubicación aproximada para saber el clima de la zona.</li>
+  <li><strong>Actividad física (opcional):</strong> para contar los pasos durante una caminata. Se pide una vez; si no se da, la app funciona igual, sin pasos. Se puede dar o sacar después desde Ajustes.</li>
   <li><strong>Notificaciones:</strong> para el aviso de caminata en curso y los avisos que la persona active (recordatorio diario, resumen del domingo y resumen del mes).</li>
   <li><strong>Micrófono:</strong> solo para grabar un audio en "Mis frases y audios", y se pide recién la primera vez que se toca "Grabar". La app no escucha ni graba en ningún otro momento. Para sumar audios compartidos desde otra app no hace falta este permiso.</li>
   <li><strong>Uso sin restricción de batería:</strong> la app lo pide una vez, y la persona puede aceptarlo o no. Sirve para que el teléfono no la frene durante una caminata con la pantalla apagada. No hace que la app use la ubicación fuera de las caminatas.</li>
