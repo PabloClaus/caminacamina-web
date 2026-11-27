@@ -19,7 +19,7 @@
 <header class="portada">
   <div class="ancho">
     <div class="barra">
-      <img src="img/icono-192.png" alt="">
+      <span class="logo"><img src="img/icono-192.png" alt=""></span>
       <span class="marca">Caminá Caminá</span>
       <nav>
         <a href="#que-hace">Qué hace</a>
@@ -27,10 +27,10 @@
         <a href="#preguntas">Preguntas</a>
         <a href="#contacto">Contacto</a>
       </nav>
-      <!-- Los botones oficiales de cada sitio: Cafecito (desde Argentina) y Ko-fi (desde otros países). -->
+      <!-- Cafecito (desde Argentina) y Ko-fi (desde otros países), con botones propios que combinan con la web. -->
       <div class="cafes">
-        <a href="https://cafecito.app/pclaus" rel="noopener" target="_blank"><img srcset="https://cdn.cafecito.app/imgs/buttons/button_1.png 1x, https://cdn.cafecito.app/imgs/buttons/button_1_2x.png 2x" src="https://cdn.cafecito.app/imgs/buttons/button_1.png" alt="Invitame un café en cafecito.app"></a>
-        <a href="https://ko-fi.com/pabloclaus" rel="noopener" target="_blank"><img src="https://storage.ko-fi.com/cdn/kofi2.png?v=6" alt="Buy me a coffee at ko-fi.com"></a>
+        <a href="https://cafecito.app/pclaus" rel="noopener" target="_blank" title="Invitame un café en cafecito.app (desde Argentina)"><img src="img/cafecito.svg" alt="" width="22" height="20"> Invitame un Cafecito</a>
+        <a href="https://ko-fi.com/pabloclaus" rel="noopener" target="_blank" title="Buy me a coffee at ko-fi.com (desde otros países)"><img src="img/kofi.png" alt="" width="24" height="20"> Buy me a coffee</a>
       </div>
     </div>
 
@@ -103,21 +103,73 @@
   </div>
 </section>
 
-<section class="gris">
-  <div class="ancho destacado">
-    <div class="telefono">
-      <img src="img/audios.webp" alt="Pantalla de audios: grabar uno, elegir cuándo suena y la lista de audios guardados" width="540" height="1080" loading="lazy">
-    </div>
-    <div>
-      <h2>Que te acompañe la voz de los que querés</h2>
-      <p class="intro">Lo que más les gusta a quienes la usan.</p>
-      <ul>
-        <li>Grabá audios de hasta 10 segundos, o pediles a tu familia que te los manden por WhatsApp y compartilos con la app.</li>
-        <li>Recortalos para que suene solo lo que querés escuchar.</li>
-        <li>Elegí cuándo suena cada uno: en los kilómetros, al salir, al batir un récord o al terminar.</li>
-        <li>Sumá también tus propias frases. Lo tuyo siempre va primero.</li>
-      </ul>
-    </div>
+<section class="gris carrusel" aria-roledescription="carrusel" aria-label="Lo que hace la app">
+  <div class="diapositivas" tabindex="0">
+      <div class="ancho destacado diapositiva">
+        <div class="telefono">
+          <img src="img/audios.webp" alt="Pantalla de audios: grabar uno, elegir cuándo suena y la lista de audios guardados" width="540" height="1080" loading="lazy">
+        </div>
+        <div>
+          <h2>Que te acompañe la voz de los que querés</h2>
+          <p class="intro">Lo que más les gusta a quienes la usan.</p>
+          <ul>
+          <li>Grabá audios de hasta 10 segundos, o pediles a tu familia que te los manden por WhatsApp y compartilos con la app.</li>
+          <li>Recortalos para que suene solo lo que querés escuchar.</li>
+          <li>Elegí cuándo suena cada uno: en los kilómetros, al salir, al batir un récord o al terminar.</li>
+          <li>Sumá también tus propias frases. Lo tuyo siempre va primero.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="ancho destacado diapositiva" aria-hidden="true">
+        <div class="telefono">
+          <img src="img/programas.webp" alt="Los programas para elegir: Empezar a caminar, 30 minutos diarios, Caminata japonesa y más" width="540" height="1080" loading="lazy">
+        </div>
+        <div>
+          <h2>Un programa a tu medida</h2>
+          <p class="intro">Elegí uno con nombre, o armá el tuyo.</p>
+          <ul>
+          <li>30 minutos diarios: elegís los minutos, los días y el ritmo, y es siempre igual.</li>
+          <li>Caminata japonesa: cinco veces 3 minutos rápido, con 3 suaves entre medio.</li>
+          <li>Tus primeros 5 km, 10 km, la media maratón o preparar el Camino de Santiago.</li>
+          <li>La voz te guía cada tramo, y el plan se ajusta según cómo te sentís.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="ancho destacado diapositiva" aria-hidden="true">
+        <div class="telefono">
+          <img src="img/viajes.webp" alt="Recorridos famosos de Viajes, con sus fotos" width="540" height="1080" loading="lazy">
+        </div>
+        <div>
+          <h2>Viajá caminando</h2>
+          <p class="intro">Cada caminata te acerca a un destino.</p>
+          <ul>
+          <li>Elegí una ciudad del mundo, en línea recta desde donde estás.</li>
+          <li>O un recorrido famoso: el Camino Inca, el Camino de Santiago, la Ruta 40, la Quebrada de Humahuaca y más.</li>
+          <li>Al terminar, la voz te dice cuánto falta o a qué parada llegaste.</li>
+          <li>Mirá el camino en el mapa y compartí tu avance.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="ancho destacado diapositiva" aria-hidden="true">
+        <div class="telefono">
+          <img src="img/objetivo.webp" alt="Caminata libre con objetivo: ida y vuelta de 30 minutos" width="540" height="1080" loading="lazy">
+        </div>
+        <div>
+          <h2>Salí con un objetivo</h2>
+          <p class="intro">Aunque no tengas plan.</p>
+          <ul>
+          <li>Por tiempo o por distancia: la voz te avisa la mitad y cuánto falta.</li>
+          <li>Ida y vuelta: a la mitad te avisa que pegues la vuelta, así no terminás lejos de casa.</li>
+          <li>A paso rápido: si aflojás, un empujoncito.</li>
+          <li>Al llegar no se corta: lo que sigas caminando también suma.</li>
+          </ul>
+        </div>
+      </div>
+  </div>
+  <div class="ancho controles">
+    <button class="flecha" data-dir="-1" aria-label="Anterior">‹</button>
+    <div class="puntos" role="tablist"></div>
+    <button class="flecha" data-dir="1" aria-label="Siguiente">›</button>
   </div>
 </section>
 
@@ -244,6 +296,49 @@
 </footer>
 
 <script>
+  // El carrusel de funciones: flechas, puntitos y deslizar con el dedo (scroll-snap).
+  (function () {
+    var c = document.querySelector(".carrusel");
+    if (!c) return;
+    var pista = c.querySelector(".diapositivas");
+    var diapos = [].slice.call(c.querySelectorAll(".diapositiva"));
+    var puntos = c.querySelector(".puntos");
+    var actual = 0;
+    diapos.forEach(function (d, i) {
+      var b = document.createElement("button");
+      b.setAttribute("role", "tab");
+      b.setAttribute("aria-label", "Ver " + d.querySelector("h2").textContent);
+      b.addEventListener("click", function () { ir(i); });
+      puntos.appendChild(b);
+    });
+    function marcar(i) {
+      actual = i;
+      [].forEach.call(puntos.children, function (b, j) { b.setAttribute("aria-selected", j === i ? "true" : "false"); });
+      diapos.forEach(function (d, j) { if (j === i) d.removeAttribute("aria-hidden"); else d.setAttribute("aria-hidden", "true"); });
+    }
+    function ir(i) {
+      i = (i + diapos.length) % diapos.length;
+      // A la de al lado, deslizando; más lejos (de la última a la primera), de un salto: si no, el
+      // navegador a veces corta el deslizamiento a mitad de camino.
+      var salto = Math.abs(i - actual) > 1;
+      pista.scrollTo({ left: i * pista.clientWidth, behavior: salto ? "auto" : "smooth" });
+      marcar(i);
+    }
+    c.querySelectorAll(".flecha").forEach(function (f) {
+      f.addEventListener("click", function () { ir(actual + Number(f.dataset.dir)); });
+    });
+    pista.addEventListener("keydown", function (e) {
+      if (e.key === "ArrowRight") { e.preventDefault(); ir(actual + 1); }
+      if (e.key === "ArrowLeft") { e.preventDefault(); ir(actual - 1); }
+    });
+    var espera;
+    pista.addEventListener("scroll", function () {
+      clearTimeout(espera);
+      espera = setTimeout(function () { marcar(Math.round(pista.scrollLeft / pista.clientWidth)); }, 80);
+    });
+    marcar(0);
+  })();
+
   // Si se llega con un link a una pregunta (#audio-whatsapp), se abre esa pregunta.
   function abrirPregunta() {
     var id = location.hash.slice(1);
